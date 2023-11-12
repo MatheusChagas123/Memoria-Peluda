@@ -23,6 +23,7 @@
 .login__header h1 {
   color: #333;
   font-size: 1.5em;
+  margin-top: 50px;
 }
 
 .login__input {
@@ -38,8 +39,8 @@
 }
 
 .login__button {
-  background-color: #00b5cc;
-  border: 3px solid #b2df28;
+  background-color: #0EBEFF;
+  border: 3px solid #3242F7;
   border-radius: 8px;
   color: #fff;
   cursor: pointer;
