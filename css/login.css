@@ -56,3 +56,56 @@
   color: #aaa;
   cursor: auto;
 }
+
+/* Adicione este estilo ao seu arquivo CSS existente ou crie um novo para o tutorial */
+
+.tutorial-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Grid com colunas automáticas */
+  gap: 20px;
+  margin-top: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.tutorial__button {
+  margin-bottom: 10px;
+  max-height: 30%;
+  background: #0EBEFF;
+  padding: 15px;
+  border-radius: 10px;
+  border: 3px solid #3242F7;
+  color: #fff;
+
+}
+
+.start-gif {
+  max-width: 100%;
+  grid-column: span 2; /* Ocupar 2 colunas no grid */
+}
+
+.tutorial-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tutorial-modal iframe {
+  width: 80%;
+  height: 80%;
+  margin: 10% auto;
+  display: block;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}

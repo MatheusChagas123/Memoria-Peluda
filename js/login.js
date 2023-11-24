@@ -20,3 +20,21 @@ const handleSubmit = (event) => {
 
 input.addEventListener('input', validateInput);
 form.addEventListener('submit', handleSubmit);
+
+function mostrarTutorial() {
+  var modal = document.getElementById("tutorialModal");
+  modal.style.display = "block";
+}
+
+function fecharTutorialModal() {
+  var modal = document.getElementById("tutorialModal");
+  modal.style.display = "none";
+}
+
+// Fechar modal clicando fora da área do vídeo
+window.onclick = function(event) {
+  var modal = document.getElementById("tutorialModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

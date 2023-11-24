@@ -26,7 +26,17 @@
     <input type="text" placeholder="Name" class="login__input">
     <button type="submit" class="login__button">Play</button>
 
+    <div class="tutorial-section">
+      <button class="tutorial__button" onclick="mostrarTutorial()">Tutorial</button>
+      <img src="./images/Animação GIF.gif" alt="Iniciar GIF" class="start-gif">
+    </div>
+
   </form>
+
+  <div class="tutorial-modal" id="tutorialModal">
+    <span class="close-button" onclick="fecharTutorialModal()">&times;</span>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/seu-ID-de-video" frameborder="0" allowfullscreen></iframe>
+  </div>
 
 </body>
 
