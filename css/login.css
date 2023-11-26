@@ -26,12 +26,10 @@
   justify-content: center;
   margin-bottom: 20px; /* Reduzindo a margem para telas menores */
 }
-
 .login__header h1 {
   color: #333;
   font-size: 1.5em;
 }
-
 .login__input {
   border: 2px solid #333;
   border-radius: 8px;
@@ -43,7 +41,6 @@
   padding: 15px;
   width: 100%;
 }
-
 button {
   background-color: #0EBEFF;
   border: 3px solid #3242F7;
@@ -55,24 +52,19 @@ button {
   padding: 15px;
   width: 100%;
 }
-
 .login__button:disabled {
   background-color: #eee;
   border: 2px solid #969595;
   color: #aaa;
   cursor: auto;
 }
-
 /* Estilos adicionados para o tutorial */
-
 .tutorial-section {
   margin-top: 20px;
 }
-
 .start-gif {
   max-width: 100%;
 }
-
 .tutorial-popup-video {
   position: fixed;
   top: 0;
@@ -83,7 +75,6 @@ button {
   width: 100%;
   display: none;
 }
-
 .tutorial-popup-video video {
   position: absolute;
   top: 50%;
@@ -95,7 +86,6 @@ button {
   object-fit: cover;
   transform: translate(-50%, -50%);
 }
-
 .tutorial-popup-video span {
   position: absolute;
   top: 5px;
@@ -106,12 +96,10 @@ button {
   z-index: 100;
   cursor: pointer;
 }
-
 @media (max-width: 768px) {
   .login__header {
     margin-bottom: 10px; /* Reduzindo a margem para telas menores */
   }
-
   .tutorial-popup-video video {
     width: 95%;
   }

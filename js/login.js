@@ -34,7 +34,15 @@ const showTutorial = () => {
   const videoElement = tutorialPopup.querySelector('video');
 
   // Adiciona a propriedade 'autoplay' para iniciar o vídeo automaticamente
-  videoElement.setAttribute('autoplay', 'true');
+  videoElement.play(); // Inicia o vídeo
+
+  // Adiciona um ouvinte de evento para verificar quando o vídeo termina
+  videoElement.addEventListener('ended', () => {
+    // Fecha o popup quando o vídeo termina
+    tutorialPopup.style.display = 'none';
+    // Reseta a variável de controle
+    isVideoPlaying = false;
+  });
 
   // Atualiza a variável de controle
   isVideoPlaying = true;
@@ -46,16 +54,16 @@ const showTutorial = () => {
 const closeTutorial = () => {
   // Verifica se o vídeo está sendo exibido antes de fechar
   if (isVideoPlaying) {
-    // Se o vídeo está sendo exibido, fecha o vídeo
-    tutorialPopup.style.display = 'none';
-    // Reseta a variável de controle
-    isVideoPlaying = false;
-  } else {
-    // Se o vídeo não está sendo exibido, redireciona para a página de login
-    window.location.href = 'login.html';
+    // Se o vídeo está sendo exibido, para a reprodução
+    const videoElement = tutorialPopup.querySelector('video');
+    videoElement.pause();
+    videoElement.currentTime = 0; // Volta para o início do vídeo
   }
+  // Fecha o popup
+  tutorialPopup.style.display = 'none';
+  // Reseta a variável de controle
+  isVideoPlaying = false;
 }
-
 input.addEventListener('input', validateInput);
 form.addEventListener('submit', handlePlay);
 playButton.addEventListener('click', handlePlay);
