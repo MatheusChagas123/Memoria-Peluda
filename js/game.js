@@ -127,12 +127,13 @@ const startTimer = () => {
     timer.innerHTML = currentTime;
   }, 1000);
 };
+
 window.onload = () => {
   spanPlayer.innerHTML = localStorage.getItem('player');
   startTimer();
   loadGame();
 };
-// Adicione este código ao seu arquivo JavaScript
+
 document.getElementById('voltarButton').addEventListener('click', function() {
-  window.location.href = '../index.html'; // Substitua o caminho pela localização correta do seu arquivo index.html
+  window.location.href = '../index.html'; 
 });

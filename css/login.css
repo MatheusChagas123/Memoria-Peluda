@@ -11,6 +11,13 @@
   height: 100vh;
   margin: 0;
 }
+.start-gif {
+  max-width: 100%;
+  max-height: 60vh; /* Ajuste este valor conforme necessário */
+  height: auto;
+  width: auto\9; /* Para lidar com problemas no IE9 */
+}
+
 
 .login-form {
   align-items: center;
